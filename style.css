@@ -1,0 +1,308 @@
+/* VARIABLES */
+:root {
+    --jaune: #fcd669;
+    --bleu-pale: #5ebc9a;
+    --bleu-fonce: #1b565a;
+    --peche: #ffba9d;
+    --beige: #fbe6cb;
+}
+
+
+/* RÉINITIALISATION */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+/*GÉNÉRAL*/
+
+.contenant{
+    width: 80%;
+    margin: auto;
+    max-width: 1100px;
+    overflow: hidden;
+
+}
+
+p {
+    font-size: 1.2rem;
+    color: #333;
+    text-align: center;
+}
+
+
+/*NAVIGATION*/
+
+#section_navigation {
+    background-color: var(--bleu-fonce);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navigation_icone {
+    align-self: center;
+    color: var(--beige);
+    transform: translateY(1rem);
+}
+
+.navigation_liste {
+    display: flex;
+    list-style: none;
+    padding: 1.5rem;
+}
+
+.navigation_lien {
+    padding: 1.5rem 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--beige);
+}
+
+.navigation_lien:hover {
+    background-color: #fbe6cb3f;
+    font-weight: 700;
+}
+
+
+/*ACCUEIL*/
+
+
+#entete {
+    width: 99vw;
+    height: 80vh;
+    position: relative;
+    background: url('./img/resto4.jpg') no-repeat center center/cover;
+
+    box-shadow: 10px 10px 10px rgba(51, 51, 51, 0.699);
+}
+
+.accueil_texte {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+}
+
+.titre_principal {
+    font-family: 'Pacifico', cursive;
+    font-size: 7rem;
+    color: var(--beige);
+    text-shadow: .7rem .7rem 1rem rgba(0, 0 , 0, 1);
+}
+
+.sous-titre {
+    font-size: 1.5rem;
+    color: var(--beige);
+    text-shadow: .7rem .7rem 1rem rgba(0, 0 , 0, 1);
+    text-transform: uppercase;
+    
+}
+
+/* À PROPOS #1 */
+
+#apropos {
+    display: flex;
+    background: var(--beige);
+
+}
+
+.apropos_image {
+    width: 50%;
+    height: 35rem;
+    background: url('./img/citron.jpg') no-repeat center center/cover;
+}
+
+.apropos_texte {
+    width: 50%;
+    position: relative;
+}
+
+.contenu {
+    width: 100%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 4.5rem;
+    text-align: center;
+
+}
+
+.titre_secondaire {
+
+    font-family: 'Pacifico', cursive;
+    font-size: 2rem;
+    font-weight: 100;
+    color: #db977a;
+    margin-bottom: 2rem;
+}
+
+.apropos_paragraph {
+    margin: 0 3rem;
+}
+
+/* À PROPOS #2 */
+
+
+#apropos2 {
+    display: flex;
+}
+
+.boite {
+    width: 33.33333%;
+    padding: 2.5rem;
+    text-align: center ;
+}
+
+.fond-fonce {
+    background-color:var(--jaune);
+}
+
+.fond-pale {
+    background-color: rgb(255, 255, 255);
+}
+
+.boite .titre_secondaire {
+    color: #333;
+    font-size: 1.5rem;
+} 
+
+i {
+    color: #333;
+    padding-bottom: 2rem;
+}
+
+
+/* RÉSERVATIONS */
+
+#reservations {
+    background: var(--beige);
+    padding: 3rem 0;
+    box-shadow: 0 0 2rem inset;
+}
+
+
+.reservation_titre{
+    font-family: 'Pacifico', cursive;
+    color: var(--bleu-fonce);
+    font-size: 4rem;
+    font-weight: 100;
+    opacity: 0.7;
+    text-align: center;
+}
+
+form {
+    margin: 4rem 0;
+
+}
+
+input {
+    display: block;
+    width: 50%;
+    padding: 1rem;
+    margin: auto;
+    margin-bottom: 2rem;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+label {
+    display: block;
+    width: 50%;
+    margin: auto;
+    color: #333;
+}
+
+#form_message {
+    height: 8rem;
+}
+
+.bouton {
+    text-transform: uppercase;
+    background-color: var(--jaune);
+    font-weight: 500;
+}
+
+.bouton:hover{
+    box-shadow: .5rem .5rem 1rem rgba(51, 51, 51, 0.699);
+    cursor: pointer;
+}
+
+
+/* COMMENTAIRES */
+
+#commentaires {
+    background-color: var(--bleu-pale) ;
+}
+
+.contenant_commentaires {
+    padding: 5rem 0;
+}
+
+.commentaires_titre {
+    color: var(--beige);
+    font-size: 4rem;
+    text-align: center;
+
+}
+
+.boite_commentaire {
+    background-color: #fbe6cbc0;
+    padding: 2rem;
+    margin-bottom: 2.5rem;
+    display: flex;
+    border-radius: .8rem;
+    border-bottom: 1rem solid var(--jaune);
+    box-shadow: .8rem .8rem .8rem rgba(51, 51, 51, 0.699);
+}
+
+.profile {
+    border-radius: 50%;
+    height: 9rem;
+}
+
+.boite_texte {
+    margin: auto;
+    padding: 0 2.5rem;
+}
+
+.nom {
+    text-align: left;
+    font-family: 'Pacifico', cursive;
+    font-size: 1.5rem;
+}
+
+.commentaire {
+    text-align: left;
+}
+
+
+/* BAS DE PAGE FOOTER */
+
+footer {
+    background-color: var(--bleu-fonce);
+    padding: 1rem;
+}
+
+#copyright {
+    font-size: 1rem;
+    color: var(--beige);
+}

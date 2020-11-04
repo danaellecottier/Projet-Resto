@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/fae5a97603.js" crossorigin="anonymous"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Quicksand:wght@300;400;500;600;700&family=Rock+Salt&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Example</title>
+</head>
+<body>
+
+    
+    <!--MENU D'ACCUEIL-->
+    <nav id="section_navigation">
+       
+        <div class="contenant">
+
+            <div class="navigation">
+
+                <i class="fas fa-utensils fa-2x navigation_icone"></i>
+            
+
+                <ul class="navigation_liste">
+                    <li><a class="navigation_lien" href="#entete">Accueil</a></li>
+                    <li><a class="navigation_lien" href="#apropos">À propos</a></li>
+                    <li><a class="navigation_lien" href="#reservations">Réserver</a></li>
+                    <li><a class="navigation_lien" href="#commentaires">Commentaires</a></li>
+                </ul>
+
+            </div>
+        
+        </div>
+
+    </nav>
+    
+    <!--Écran d'ACCUEIL/ Entête (Incluant le menu)-->
+    <header id="entete">
+
+        <div class="contenant">
+            <div class="accueil_texte">
+                <h1 class="titre_principal">Vite, ça crèpe!</h1>
+    
+                <h2 class="sous-titre">Restaurant ouvert pour le déjeuner, dîner et souper!</h2>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <!--Section À PROPOS. Renseigne le client sur le restaurant-->
+    <section id="apropos">
+
+        <div class="apropos_image"></div>
+        <div class="apropos_texte">
+            <div class="contenu">
+                <h3 class="titre_secondaire">Des crèpes faites à base d'ingrédients naturels</h3>
+                <p class="apropos_paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi numquam, necessitatibus quis autem eligendi est itaque. Maxime eius et officia. 20</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="apropos2">
+
+        <div class="boite fond-pale">
+            <i class="fas fa-baby fa-4x"></i>
+            <h4 class="titre_secondaire">Menu pour enfant</h4>
+            <p class="detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt, quasi?</p>
+        </div>
+
+        <div class="boite fond-fonce">
+            <i class="fas fa-carrot fa-4x"></i>
+            <h4 class="titre_secondaire">Options Végés!</h4>
+            <p class="detail">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+        <div class="boite fond-pale">
+            <i class="fab fa-accessible-icon fa-4x"></i>
+            <h4 class="titre_secondaire">Accessibilité</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium distinctio placeat!</p>
+        </div>
+
+
+
+
+    </section>
+
+    <!--Section RÉSERVATIONS -->
+    <section id="reservations">            
+        <div class="contenant">
+        
+            <h3 class="reservation_titre">Réservations</h3>
+            <p>Pour réserver une table, remplissez le formulaire suivant!</p>
+            
+            <form action="#">
+        
+            <label for="form_nom">Nom</label>
+            <input type="text" id="form_nom" name="form_nom">
+                        
+            <label for="form_telephone">Numéro de téléphone</label>
+            <input type="text" id="form_telephone" name="form_telephone">
+            
+            <label for="form_date">Date de la réservation</label>
+            <input type="date" id="form_date" name="form_date">
+            
+            <label for="form_message">Avez-vous d'autres informations à nous communiquer?</label>
+            <input type="text" id="form_message" name="form_message">
+            
+            <input class="bouton" type="submit" value="Envoyer!"> 
+            
+            </form>
+            
+        </div>            
+
+    </section>
+
+    <!--Section COMMENTAIRES-->
+    <section id="commentaires">
+
+        <div class="contenant contenant_commentaires">
+            
+            <h2 class="commentaires_titre titre_secondaire">Clients satisfaits</h2>
+
+            <div class="boite_commentaire">
+                <img src="img/client1.jpg" alt="Photo de profile" class="profile">
+                <div class="boite_texte">
+                    <p class="nom">Marilou</p>
+                    <p class="commentaire">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, consectetur, sunt incidunt dolores, nam nisi dicta ducimus facere ad perferendis pariatur exercitationem quam omnis ullam!</p>
+                </div>
+            </div>
+            
+            <div class="boite_commentaire">
+                <img src="img/client2.jpg" alt="Photo de profile" class="profile">
+                <div class="boite_texte">
+                    <p class="nom">Kyle</p>
+                    <p class="commentaire">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente culpa voluptas laudantium sint aperiam magnam possimus quae nulla exercitationem. Quidem nemo dolores neque facere culpa accusamus at, aperiam repellat temporibus.</p>
+                </div>
+            </div>
+            
+            <div class="boite_commentaire">
+                <img src="img/client3.jpg" alt="Photo de profile" class="profile">
+                <div class="boite_texte">
+                    <p class="nom">Delphine</p>
+                    <p class="commentaire">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores odit mollitia reiciendis esse corporis suscipit, at molestiae atque fugiat ex?</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+    </section>
+
+
+
+    <!--Bas de page FOOTER -->
+   
+    <footer id="bas-de-page">
+        <p id="copyright">&copy; Page crée par Miss Cottier</p>
+    </footer>
+ 
+
+</body>
+</html>
